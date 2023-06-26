@@ -1,3 +1,4 @@
+import Sidebar from '@/components/Sidebar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -14,8 +15,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="pt-BR" className='h-full'>
+      <body className={`${inter.className} h-full`}>
+        <Sidebar />
+        <div className='pl-64'>
+        {children}
+        </div>
+        
+        </body>
     </html>
   )
 }
