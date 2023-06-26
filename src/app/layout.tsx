@@ -21,7 +21,6 @@ export default function RootLayout({
         <div className='pl-64'>
         {children}
         </div>
-        
         </body>
     </html>
   )
